@@ -9,13 +9,9 @@
     <div class="col-lg-12">
         <div id="map"></div>
 		<script>
-			// Initialize and add the map
 				function initMap() {
-			// The location of DaNang
 				var danang = {lat: 16.047079, lng: 108.206230};
-			// The map, centered at DaNang
 				var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: danang});
-			// The marker, positioned at DaNang
 				var marker = new google.maps.Marker({position: danang, map: map});
 				}
 		</script>
@@ -81,7 +77,7 @@
 
                     <div id="contact-status"></div>
 
-                    <form action="#" id="contactform">
+                    <form action="mailto:vophucluan@gmail.com" method="post" enctype="text/plain" id="contactform">
                         <p class="form-group" id="contact-name">
                             <label for="name">Your Name</label>
                             <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
