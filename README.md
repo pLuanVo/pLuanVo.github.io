@@ -1,6 +1,6 @@
 # PanelCV
 
-Take this from Internet for my CV. Im not a web designer
+Take this from Internet for my CV
 
 
 Author of this:
