@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luân Võ — Senior DevOps / SRE / Platform Engineer</title>
+  <meta name="description" content="Luân Võ — Senior DevOps Engineer based in Da Nang, Vietnam. AWS, Azure, Kubernetes, Terraform, CI/CD.">
+  <meta property="og:title" content="Luân Võ — Senior DevOps / SRE / Platform Engineer">
+  <meta property="og:description" content="Making infrastructure reliable, scalable, and boring — in the best way.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pluanvo.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Luân Võ</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#hobbies">Life</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#hobbies">Life</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <img src="avatar.jpg" alt="Luân Võ" width="160" height="160">
+        <div class="hero-avatar-ring"></div>
+      </div>
+      <h1 class="hero-name">Luân Võ</h1>
+      <p class="hero-title">Senior DevOps / SRE / Platform Engineer</p>
+      <p class="hero-tagline">Making infrastructure reliable, scalable, and boring — in the best way.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#portfolio" class="btn btn-ghost">View my work</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:vophucluan@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pluanvo/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/pLuanVo" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="tel:+840903599622" aria-label="Phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/phuc.luan.1" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <div class="hero-location">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Da Nang, Vietnam
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About me</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>I'm a <strong>Senior DevOps Engineer</strong> with ~6 years of hands-on cloud & infrastructure experience and ~9 years across IT/platform/infra. I've built CI pipelines for automotive R&D at LG, shipped serverless architectures on AWS, and managed hybrid on-prem + cloud environments.</p>
+          <p>I care about making infrastructure reliable, automated, and boring (in the best way). When I'm not wrangling containers or writing Terraform, you'll find me smashing shuttlecocks on the badminton court, binge-watching anime, or hunting down the best local street food.</p>
+          <p>Currently <strong>open to new opportunities</strong> — especially remote-first roles where async communication and written culture are the default.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">~9</span>
+            <span class="stat-label">Years in IT & Infra</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">~6</span>
+            <span class="stat-label">Years Cloud DevOps</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">International Certs</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Public Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>LG Electronics R&D Vietnam</h3>
+              <span class="timeline-date">May 2024 — May 2026</span>
+            </div>
+            <p class="timeline-role">Senior Research Engineer — DevOps / CI Infrastructure</p>
+            <ul class="timeline-details">
+              <li>Owned Kubernetes build farms for scalable CI across multi-team automotive R&D</li>
+              <li>Managed Jenkins + Artifactory CI pipelines, Gerrit/GitLab code review</li>
+              <li>Administered on-prem Ubuntu fleet with bare-metal + Docker + shared storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Nal Solution (now Mynavi TechTus)</h3>
+              <span class="timeline-date">Jun 2022 — Apr 2024</span>
+            </div>
+            <p class="timeline-role">DevOps Engineer — Client Delivery</p>
+            <ul class="timeline-details">
+              <li>Terraform + Ansible IaC for multi-client outsource projects</li>
+              <li>CI/CD across Jenkins, Bitbucket Pipelines, AWS CodePipeline, Azure DevOps</li>
+              <li>AWS serverless & containers: Lambda, ECS, API Gateway, RDS/Aurora, CDK (TypeScript)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>B.A.P Software</h3>
+              <span class="timeline-date">May 2021 — Apr 2022</span>
+            </div>
+            <p class="timeline-role">Infrastructure Engineer</p>
+            <ul class="timeline-details">
+              <li>Built dev environments on both on-prem VMware VMs and AWS EC2 for multiple projects</li>
+              <li>Grew proficient with Docker, Linux (CentOS), Nginx reverse-proxy</li>
+              <li>Configured GitLab CI pipelines in depth; deepened AWS hands-on through troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>SupremeTech</h3>
+              <span class="timeline-date">Jul 2020 — May 2021</span>
+            </div>
+            <p class="timeline-role">System Administrator</p>
+            <ul class="timeline-details">
+              <li>First steps into cloud: studied AWS, began Terraform provisioning</li>
+              <li>Managed company IT assets — firewall, switch, access points, endpoints</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Sun Group</h3>
+              <span class="timeline-date">Mar 2018 — Mar 2019</span>
+            </div>
+            <p class="timeline-role">IT Specialist</p>
+            <ul class="timeline-details">
+              <li>Networking (VLAN, ACL, routing) and VMware virtualization (ESXi, vCenter)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>ONE Corp.</h3>
+              <span class="timeline-date">Feb 2017 — Apr 2018</span>
+            </div>
+            <p class="timeline-role">System Integration Engineer</p>
+            <ul class="timeline-details">
+              <li>On-site network/server integration — rack & stack, L2/L3, VLANs, Windows/Linux baselines</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills & Tools</h2>
+      <div class="skills-grid reveal">
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            Cloud
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">AWS</span>
+            <span class="pill">Azure</span>
+            <span class="pill">EC2</span>
+            <span class="pill">Lambda</span>
+            <span class="pill">ECS</span>
+            <span class="pill">RDS / Aurora</span>
+            <span class="pill">S3</span>
+            <span class="pill">CloudFront</span>
+            <span class="pill">VPC</span>
+            <span class="pill">API Gateway</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Infrastructure as Code
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Terraform</span>
+            <span class="pill">AWS CDK</span>
+            <span class="pill">Ansible</span>
+            <span class="pill">CloudFormation</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            CI/CD
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">GitLab CI</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Jenkins</span>
+            <span class="pill">Bitbucket Pipelines</span>
+            <span class="pill">Azure DevOps</span>
+            <span class="pill">AWS CodePipeline</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            Containers & Orchestration
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Kubernetes</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Helm</span>
+            <span class="pill">AKS</span>
+            <span class="pill">EKS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            OS & Networking
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Linux (Ubuntu, CentOS)</span>
+            <span class="pill">Nginx</span>
+            <span class="pill">VMware ESXi</span>
+            <span class="pill">VLAN / ACL</span>
+            <span class="pill">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Security & Monitoring
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">SonarQube</span>
+            <span class="pill">Trivy</span>
+            <span class="pill">Checkov</span>
+            <span class="pill">cfn-guard</span>
+            <span class="pill">WAF</span>
+            <span class="pill">Artifactory</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs reveal">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <a href="https://www.credly.com/badges/664a966b-1e6d-4a00-b58e-7f196bc1b132" target="_blank" rel="noopener" class="cert-card">
+            <div class="cert-badge">CKA</div>
+            <div class="cert-info">
+              <strong>Certified Kubernetes Administrator</strong>
+              <span>The Linux Foundation</span>
+            </div>
+          </a>
+          <a href="https://www.credly.com/badges/f69ca661-171a-4874-a868-e6ae0852bc17" target="_blank" rel="noopener" class="cert-card">
+            <div class="cert-badge">SAA</div>
+            <div class="cert-info">
+              <strong>AWS Solutions Architect — Associate</strong>
+              <span>Amazon Web Services</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section section-alt" id="portfolio">
+    <div class="container">
+      <h2 class="section-title reveal">Technical Portfolio</h2>
+      <p class="section-subtitle reveal">Open-source projects demonstrating real-world DevOps & security practices</p>
+      <div class="portfolio-grid reveal">
+
+        <a href="https://github.com/pLuanVo/devsecops-pipeline-demo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>DevSecOps Pipeline Demo</h3>
+          <p>6 security scanning tools integrated into CI/CD — Trivy, Checkov, Bandit, Gitleaks, Semgrep, pip-audit</p>
+          <div class="project-tags">
+            <span>GitLab CI</span><span>Python</span><span>Docker</span><span>Security</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/pLuanVo/azure_logic_app_demo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h3>Azure Logic App Demo</h3>
+          <p>Azure integration workflow with Terraform IaC, CI/CD pipeline, and automated infrastructure provisioning</p>
+          <div class="project-tags">
+            <span>Azure</span><span>Terraform</span><span>GitHub Actions</span><span>Logic Apps</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/pLuanVo/aws-cdk-serverless-demo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>AWS CDK Serverless Demo</h3>
+          <p>Serverless API with dual OIDC CI/CD (GitHub Actions + Bitbucket Pipelines) and AWS CDK TypeScript</p>
+          <div class="project-tags">
+            <span>AWS CDK</span><span>Lambda</span><span>TypeScript</span><span>OIDC</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/pLuanVo/aws_cfn_security_demo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>AWS CFN Security Demo</h3>
+          <p>6 CloudFormation stacks with SSM, GitLab OIDC, cfn-guard policy-as-code validation</p>
+          <div class="project-tags">
+            <span>CloudFormation</span><span>cfn-guard</span><span>GitLab CI</span><span>IAM</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/pLuanVo/aks-devsecops-monitor-demo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>AKS DevSecOps Monitor Demo</h3>
+          <p>AKS cluster with ACR, Azure Monitor, Defender for Containers, and Azure Policy — Terraform IaC</p>
+          <div class="project-tags">
+            <span>AKS</span><span>Terraform</span><span>Azure Monitor</span><span>Defender</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies / Life -->
+  <section class="section" id="hobbies">
+    <div class="container">
+      <h2 class="section-title reveal">Beyond the terminal</h2>
+      <p class="section-subtitle reveal">Because life isn't all YAML and Terraform</p>
+      <div class="hobbies-grid reveal">
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>Badminton</h3>
+          <p>My go-to sport — nothing clears the head like a good smash after debugging all day</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg>
+          </div>
+          <h3>Movies & Anime</h3>
+          <p>From Studio Ghibli to Christopher Nolan — love both animated worlds and live-action storytelling</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Travel</h3>
+          <p>Exploring new places, soaking up different cultures, and getting lost on purpose</p>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Food Explorer</h3>
+          <p>If it's new and edible, I'm in. Street food, fine dining, weird snacks — the weirder the better</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Let's connect</h2>
+      <p class="section-subtitle reveal">Open to remote DevOps/SRE opportunities and interesting conversations</p>
+      <div class="contact-grid reveal">
+
+        <a href="mailto:vophucluan@gmail.com" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>vophucluan@gmail.com</span>
+        </a>
+
+        <a href="tel:+840903599622" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>0903 599 622</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/pluanvo/" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/pLuanVo" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://www.facebook.com/phuc.luan.1" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UC0ddlJEw4J9aBqwELvOp_FA" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          <span>YouTube</span>
+        </a>
+
+        <a href="https://luantien.com/" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>luantien.com</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"/><line x1="12" y1="6" x2="12" y2="18"/></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Luân Võ. Built with vanilla HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
